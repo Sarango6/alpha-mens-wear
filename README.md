@@ -6,20 +6,15 @@ Welcome to the official frontend prototype for **Alpha Mens**, a modern, masculi
 
 ---
 
-## ⚡ Prototype Preview & Mandatory Watermark
+## ⚡ Clean Client Presentation & Safe Mock Sandbox
 
-This project has been built strictly adhering to client evaluation and demonstration safety requirements:
+This project provides a clean, responsive streetwear store experience:
 
-1. **Mandatory Fullscreen Watermark**:
-   - A subtle, repeating diagonal pattern (`ALPHA MENS • PROTOTYPE • DEMO ONLY`) is layered across the entire viewport at ~18% opacity.
-   - Fixed with an ultra-high z-index (`99998`) and `pointer-events: none` to keep all buttons, links, inputs, and scrolling 100% interactive.
-   - Visible across all routes, modals, drawers, and light/dark theme sections.
+1. **Unobstructed Visual Presentation**:
+   - Clean, high-impact streetwear visuals without watermarks or intrusive badges.
+   - Preserves all layout hierarchy, fluid animations, and responsive interactions.
 
-2. **Persistent "PROTOTYPE PREVIEW" Badge**:
-   - Fixed floating status pill in the bottom-right corner with a live pulsing indicator.
-   - Clicking opens an interactive **Prototype Specifications Modal** detailing simulated checkout mechanics and safety disclaimers.
-
-3. **Zero Financial Charges & Safe Mock Sandbox**:
+2. **Zero Financial Charges & Safe Mock Sandbox**:
    - No real payment gateways or real banking credentials collected.
    - Mock UPI, card, and COD selections with instant simulated order generation and confetti celebration.
 
@@ -111,7 +106,6 @@ alpha-mens-wear/
 │   │   ├── ScrollToTop.jsx      # Route transition scroll reset
 │   │   ├── SearchModal.jsx      # Live product search modal
 │   │   ├── SizeGuideModal.jsx   # Interactive modal with cm/inches charts
-│   │   ├── WatermarkOverlay.jsx # Mandatory full-screen diagonal watermark
 │   │   └── WhatsAppButton.jsx   # Floating WhatsApp stylist assistance
 │   ├── context/
 │   │   ├── CartContext.jsx      # Cart items, coupons, totals, and persistence
@@ -220,11 +214,11 @@ npx vercel
 
 ---
 
-## 🔍 Prototype-Only Features vs. Production Launch Requirements
+## 🔍 Prototype Features vs. Production Launch Requirements
 
 | Feature Area | Implemented in This Prototype | Required Before Production Launch |
 | :--- | :--- | :--- |
-| **Watermark** | Fullscreen repeating watermark & preview pill | Toggle off via environment flag (`VITE_SHOW_WATERMARK=false`) |
+| **Visual Layout** | Clean brand UI without watermarks or preview badges | Production brand lookbook and campaign assets |
 | **Payment Gateway** | Simulated UPI, Card, NetBanking, and COD selectors | Integrate real PG (Razorpay, Cashfree, or PayU with webhook callbacks) |
 | **Catalog Data** | 14 curated local demo products in `products.js` | Connect to backend headless CMS or database (MongoDB Atlas / Strapi / Shopify Storefront API) |
 | **Order Processing** | LocalStorage simulated order records (`alpha_mens_orders`) | Implement Node.js / Express backend with transactional database & inventory locking |
@@ -251,8 +245,7 @@ Before migrating this prototype into a live commercial store, the client must su
 
 ## ✅ Quality & Testing Checklist
 
-- [x] Fullscreen repeating diagonal watermark active across all routes, modals, and drawers
-- [x] Persistent "PROTOTYPE PREVIEW" badge and informative specification modal
+- [x] Clean presentation with no watermark or prototype badge across any page
 - [x] Responsive layout tested for Desktop, Tablet, and Mobile viewport screens
 - [x] Working navigation bar, mobile menu drawer, and live catalog search
 - [x] Rich product cards with image hover swap, wishlist toggle, and quick-add size selector

@@ -5,7 +5,6 @@ import { WishlistProvider } from "./context/WishlistContext";
 import { CartProvider } from "./context/CartContext";
 
 // Components
-import { WatermarkOverlay } from "./components/WatermarkOverlay";
 import { AnnouncementBar } from "./components/AnnouncementBar";
 import { Navbar } from "./components/Navbar";
 import { CartDrawer } from "./components/CartDrawer";
@@ -39,8 +38,6 @@ export default function App() {
         <CartProvider>
           <Router>
             <ScrollToTop />
-            {/* MANDATORY FULLSCREEN WATERMARK & PERSISTENT PREVIEW BADGE */}
-            <WatermarkOverlay />
 
             <div className="site-layout flex flex-col min-h-screen">
               <AnnouncementBar />

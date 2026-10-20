@@ -307,7 +307,7 @@ export const CartPage = () => {
 
             <div style={{ marginTop: "16px", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontSize: "0.74rem", color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}>
               <ShieldCheck size={14} style={{ color: "#34d399" }} />
-              PROTOTYPE PREVIEW • NO REAL CARD CHARGES
+              DEMO STORE SANDBOX • NO REAL PAYMENT PROCESSED
             </div>
           </div>
         </div>

@@ -146,8 +146,8 @@ export const Footer = () => {
             © {new Date().getFullYear()} {LEGAL_METADATA.brandName} (PROTOTYPE DEMO). All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.74rem", color: "var(--accent-orange)" }}>
-              WATERMARK ACTIVE: DEMO ONLY
+            <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.74rem", color: "var(--text-muted)" }}>
+              ENGINEERED HEAVYWEIGHT STREETWEAR
             </span>
           </div>
         </div>

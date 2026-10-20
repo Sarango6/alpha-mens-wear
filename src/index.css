@@ -246,78 +246,10 @@ input, select, textarea {
 }
 
 /* ==========================================================================
-   PROTOTYPE WATERMARK & PREVIEW BADGE
+   MODAL DIALOGS & OVERLAYS
    ========================================================================== */
 
-.prototype-badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(10, 10, 12, 0.92);
-  border: 1px solid rgba(249, 115, 22, 0.5);
-  padding: 8px 14px;
-  border-radius: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 14px rgba(249, 115, 22, 0.25);
-  backdrop-filter: blur(10px);
-  transition: all var(--transition-normal);
-  cursor: pointer;
-}
-
-.prototype-badge-pill:hover {
-  background: rgba(20, 20, 24, 0.98);
-  border-color: var(--accent-orange);
-  transform: translateY(-2px);
-}
-
-.prototype-pulse-dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--accent-orange);
-  border-radius: 50%;
-  position: relative;
-}
-
-.prototype-pulse-dot::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: var(--accent-orange);
-  opacity: 0.5;
-  animation: pulse 1.8s infinite ease-out;
-}
-
-@keyframes pulse {
-  0% { transform: scale(0.6); opacity: 0.8; }
-  100% { transform: scale(1.8); opacity: 0; }
-}
-
-.prototype-badge-text {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: #ffffff;
-}
-
-.prototype-info-icon {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: #fff;
-}
-
-/* Prototype Modal */
-.prototype-modal-backdrop {
+.modal-backdrop, .prototype-modal-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
@@ -330,7 +262,7 @@ input, select, textarea {
   animation: fadeIn 200ms ease;
 }
 
-.prototype-modal-card {
+.modal-card, .prototype-modal-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-lg);
@@ -341,7 +273,7 @@ input, select, textarea {
   animation: slideUp 250ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.prototype-modal-header {
+.modal-header, .prototype-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -350,23 +282,23 @@ input, select, textarea {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.prototype-modal-title {
+.modal-title, .prototype-modal-title {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.prototype-modal-title h3 {
+.modal-title h3, .prototype-modal-title h3 {
   font-size: 1.05rem;
   font-weight: 700;
   color: #ffffff;
 }
 
-.prototype-alert-icon {
+.modal-icon, .prototype-alert-icon {
   color: var(--accent-orange);
 }
 
-.prototype-close-btn {
+.modal-close-btn, .prototype-close-btn {
   color: var(--text-muted);
   padding: 4px;
   border-radius: 4px;
@@ -375,55 +307,15 @@ input, select, textarea {
   justify-content: center;
 }
 
-.prototype-close-btn:hover {
+.modal-close-btn:hover, .prototype-close-btn:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
 }
 
-.prototype-modal-body {
+.modal-body, .prototype-modal-body {
   padding: 24px;
 }
 
-.prototype-alert-banner {
-  background: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.3);
-  padding: 14px;
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  color: #fed7aa;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.prototype-spec-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 24px;
-}
-
-.prototype-spec-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-.prototype-spec-item code {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #fff;
-  font-family: var(--font-mono);
-  font-size: 0.8em;
-}
-
-.spec-check {
-  color: var(--accent-orange);
-  flex-shrink: 0;
-  margin-top: 3px;
-}
 
 /* ==========================================================================
    HEADER & NAVBAR
